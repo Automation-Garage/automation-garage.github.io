@@ -1,0 +1,74 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: black;
+    font-family: 'Noto Sans CJK SC', '文泉驿微米黑', '微软雅黑', '黑体', sans-serif;
+}
+
+#index-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+#index-header-link {
+    margin: 30px 50px;
+}
+
+#index-header-link a {
+    color: white;
+    opacity: 0.7;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#index-header-link a:hover {
+    opacity: 1;
+}
+
+#index-logo {
+    display: block;
+    margin: 0 auto;
+    width: 700px;
+}
+
+#index-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: white;
+    width: 600px;
+    margin: 0 auto;
+}
+
+#index-nav div {
+    border: black solid 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.5s;
+    cursor: pointer;
+    padding: 15px 60px;
+}
+
+#index-nav div:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: white solid 1px;
+}
+
+
+/*   Responsive   */
+
+@media screen and (max-width:600px) {
+    #index-header-link {
+        margin: 1em;
+    }
+}
