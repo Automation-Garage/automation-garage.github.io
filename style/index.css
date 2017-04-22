@@ -65,6 +65,39 @@ body {
 }
 
 
+/* blogs list begin */
+
+#blogs-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#blogs-list ul li {
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+    width: 200px;
+    height: 30px;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+}
+
+#blogs-list ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#blogs-list ul li:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+
+/* blogs list end */
+
+
 /*   Responsive   */
 
 @media screen and (max-width:600px) {
